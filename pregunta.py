@@ -53,7 +53,7 @@ def ingest_data():
     for fila in dataFilas:
         fila = fila.split("%")
         datosPalabrasClave = fila[0].split()
-        palabrasClave = fila[1]
+        palabrasClave = fila[1].strip()
 
         for i in range(3):
             datosPalabrasClave[i] = float(datosPalabrasClave[i].replace(",", "."))
